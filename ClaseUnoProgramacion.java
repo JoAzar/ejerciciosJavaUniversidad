@@ -2,7 +2,7 @@
 import java.util.Scanner;
 
 public class ClaseUnoProgramacion {
-	/*
+
 	static void imprimirSuma(int a, int b) {
 		int resultado = a+b;
 		System.out.println(resultado);
@@ -95,7 +95,7 @@ public class ClaseUnoProgramacion {
 			cont++;
 		}
 		return cont;
-	} //hecho
+	}
 
 	static boolean esDivisible(int n, int m) {
 		boolean resultado = true;
@@ -106,7 +106,7 @@ public class ClaseUnoProgramacion {
 			return resultado;
 		}
 	}
-	
+
 	static String reversa(String pal) {
 		String palRev = "";
 		for(int i=0; i<pal.length(); i++) {
@@ -114,7 +114,7 @@ public class ClaseUnoProgramacion {
 		}
 		return palRev;
 	}
-	
+
 	static int cantidadApariciones(String pal, char letra) {
 		int cant = 0;
 		for(int i=0; i<pal.length(); i++) {
@@ -262,7 +262,7 @@ public class ClaseUnoProgramacion {
 
 	public static void main(String[] args) {
 		
-		/*
+		
 		Scanner scan = new Scanner(System.in);
 		Scanner scan2 = new Scanner(System.in);
 		
