@@ -2,19 +2,19 @@
 import java.util.Scanner;
 
 public class ClaseUnoProgramacion {
-	
+	/*
 	static void imprimirSuma(int a, int b) {
 		int resultado = a+b;
 		System.out.println(resultado);
 	}
-	
-	
+
+
 	static void promedio(int a, int b) {
 		int prom = (a+b)/2;
 		System.out.println("El promedio de "+a+" y "+b+" es "+prom);
 	}
-	
-	
+
+
 	static void ponerNota(double x, double y) {
 		double resultado = (x+y)/2;
 		resultado = Math.round(resultado*1000.0)/1000.0;
@@ -27,8 +27,8 @@ public class ClaseUnoProgramacion {
 		else {
 			System.out.println("Su nota es "+resultado+" debe recuperar");
 		}
-	}	
-	
+	}
+
 	static void imprimirFecha(int dia, int mes, int anio) {
 		String mesString = "";
 		switch(mes) {
@@ -48,8 +48,8 @@ public class ClaseUnoProgramacion {
 		}
 		System.out.println(dia+" de "+mesString+" de "+anio);
 	}
-		
-	
+
+
 	static int sumatoria(int n) {
 		int resultado = 0;
 		for(int i=1; i<=n; i++) {
@@ -57,8 +57,8 @@ public class ClaseUnoProgramacion {
 		}
 		return resultado;
 	}
-	
-	
+
+
 	static int sumatoriaPares(int n) {
 		int suma = 0;
 		for(int i=2; i<=n; i++) {
@@ -68,13 +68,13 @@ public class ClaseUnoProgramacion {
 		}
 		return suma;
 	}
-	
-	
+
+
 	static double potencia(double x, int a) {
 		double resultado = Math.pow(x, a);
 		return resultado;
 	}
-	
+
 	static double factorial(int n) {
 		int resultado = 1;
 		if(!(n==0)) {
@@ -87,7 +87,7 @@ public class ClaseUnoProgramacion {
 		}
 		return resultado;
 	}
-	
+
 	static int cantCifras(int n) {
 		int cont = 1;
 		while(!(n<=1)) {
@@ -95,8 +95,8 @@ public class ClaseUnoProgramacion {
 			cont++;
 		}
 		return cont;
-	}5
-	
+	} //hecho
+
 	static boolean esDivisible(int n, int m) {
 		boolean resultado = true;
 		if(n%m==0) {
@@ -242,12 +242,27 @@ public class ClaseUnoProgramacion {
 		promedio = suma2(a)/a.length;
 		return promedio;
 	}
+	*/
+	public static void imprimir(int[] a) {
+		System.out.print("[ ");
+		for(int i=0; i < a.length; i++) {
+			System.out.print(a[i]+" ");
+		}
+		System.out.println("]");
+	}
 	
+	public static int[] sacarElementos(int[] a) {
+		int[] b = new int[a.length-2];
+		for(int i=1; i < a.length-1; i++) {
+			b[i-1] = a[i];
+		}
+		return b;
+	}
 	
 
 	public static void main(String[] args) {
 		
-		
+		/*
 		Scanner scan = new Scanner(System.in);
 		Scanner scan2 = new Scanner(System.in);
 		
@@ -426,6 +441,11 @@ public class ClaseUnoProgramacion {
 		//EJERCICIO 29
 		double[] array = {6.5, 8.3, 7.1, 8.3, 3.2};
 		System.out.println(promedio(array));
+		*/
+		
+		int[] array = {1, 2, 3, 4, 5, 6, 7, 1};
+		imprimir(sacarElementos(array));
+		
 		
 	}
 
